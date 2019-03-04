@@ -12,6 +12,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "cover": "nyc mocha --recursive --exit --colors --timeout 5000 --require test/bootstrap.js",
+    "lint": "eslint . --color --ext .js",
+    "test": "mocha --recursive --exit --colors --timeout 5000 --require test/bootstrap.js"
   },
   "engines": {
     "node": ">=10.0"
