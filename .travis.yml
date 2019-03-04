@@ -17,3 +17,6 @@ install:
 script:
   - yarn lint
   - yarn cover
+
+after_success:
+  - yarn coveralls
