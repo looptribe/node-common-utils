@@ -2,7 +2,7 @@
     "all": true,
     "include": ["src/**"],
     "reporter": [
-        "lcov",
+        "text-lcov",
         "text-summary"
     ]
 }
