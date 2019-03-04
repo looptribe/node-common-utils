@@ -1,0 +1,3 @@
+{
+    "database": "${CONFIG_DATABASE_URL}"
+}

@@ -1,0 +1,23 @@
+{
+    "extends": ["eslint:recommended", "google"],
+    "env": {
+        "node": true,
+        "es6": true,
+        "mocha": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
+    "plugins": ["mocha-no-only"],
+    "rules": {
+        "eol-last": 2,
+        "indent": [2, 4, {"SwitchCase": 1}],
+        "max-len": [2, 160, 2],
+        "quotes": [2, "single", "avoid-escape"],
+        "quote-props": [2, "consistent-as-needed"],
+        "no-warning-comments": 1,
+        "require-jsdoc": 0,
+        "strict": [2, "global"],
+        "mocha-no-only/mocha-no-only": 2
+    }
+}

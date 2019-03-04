@@ -1,0 +1,8 @@
+'use strict';
+
+module.exports.SERVER_ERRORS = {
+    GENERIC: 'ERROR',
+    NOT_FOUND: 'NOT_FOUND',
+    UNAUTHORIZED: 'UNAUTHORIZED',
+    ACCESS_DENIED: 'ACCESS_DENIED',
+};
