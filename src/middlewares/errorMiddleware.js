@@ -6,7 +6,7 @@ const codeToStatus = {
     [SERVER_ERRORS.NOT_FOUND]: 404,
     [SERVER_ERRORS.UNAUTHORIZED]: 401,
     [SERVER_ERRORS.ACCESS_DENIED]: 403,
-    // [SERVER_ERRORS.VALIDATION]: 400,
+    [SERVER_ERRORS.BAD_REQUEST]: 400,
 };
 
 const buildMiddleware = (logger) => (err, req, res, next) => {
