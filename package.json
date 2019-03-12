@@ -14,7 +14,7 @@
   "scripts": {
     "cover": "nyc mocha --recursive --exit --colors --timeout 5000 --require test/bootstrap.js",
     "lint": "eslint . --color --ext .js",
-    "test": "mocha --recursive --exit --colors --timeout 5000 --require test/bootstrap.js",
+    "test": "cross-env NODE_ENV=test mocha --recursive --exit --colors --timeout 5000 --require test/bootstrap.js",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "engines": {
@@ -24,6 +24,7 @@
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "coveralls": "^3.0.3",
+    "cross-env": "^5.2.0",
     "eslint": "^5.12.0",
     "eslint-config-google": "^0.12.0",
     "eslint-plugin-mocha-no-only": "^1.1.0",
