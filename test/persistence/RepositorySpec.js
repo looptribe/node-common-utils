@@ -54,6 +54,16 @@ describe('persistence/Repository', () => {
             expect(result).to.be.an('array');
             expect(result).to.deep.equal(collectionContent);
         });
+        it('should return a few existing objects', async () => {
+            const result = await sut.find(null, 2);
+            expect(result).to.be.an('array');
+            expect(result).to.have.lengthOf(6);
+        });
+        it('should return a few existing objects', async () => {
+            const result = await sut.find(null, null, 4);
+            expect(result).to.be.an('array');
+            expect(result).to.have.lengthOf(4);
+        });
     });
 
     describe('findOne', () => {

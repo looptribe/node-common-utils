@@ -40,10 +40,16 @@ class Repository {
         }
     }
 
-    async find(query = {}) {
+    async find(query = {}, offset, limit) {
         this.logger.debug(`${this.repositoryName}/find`);
         const collection = await this.getCollection();
-        const results = await collection.find(query);
+        let results = await collection.find(query);
+        if (offset) {
+            results = results.skip(offset);
+        }
+        if (limit) {
+            results = results.limit(limit);
+        }
         const data = await results.toArray();
         this.logger.silly(util.inspect(data, true, null));
         return data;
