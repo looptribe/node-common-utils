@@ -7,6 +7,7 @@ const codeToStatus = {
     [SERVER_ERRORS.UNAUTHORIZED]: 401,
     [SERVER_ERRORS.ACCESS_DENIED]: 403,
     [SERVER_ERRORS.BAD_REQUEST]: 400,
+    [SERVER_ERRORS.CONFLICT]: 409,
 };
 
 const buildMiddleware = (logger) => (err, req, res, next) => {
