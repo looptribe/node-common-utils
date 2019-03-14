@@ -4,4 +4,4 @@ module.exports.AccessDeniedError = require('./AccessDeniedError');
 module.exports.ApplicationError = require('./ApplicationError');
 module.exports.BadRequestError = require('./BadRequestError');
 module.exports.NotFoundError = require('./NotFoundError');
-module.exports.UnauthorizedError = require('./UnauthorizedError');
+module.exports.ConflictError = require('./ConflictError');
