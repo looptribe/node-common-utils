@@ -129,4 +129,13 @@ describe('persistence/Repository', () => {
             expect(result).to.be.null;
         });
     });
+
+    describe('deleteMany', () => {
+        it('should delete many existing objects', async () => {
+            await sut.deleteMany({name: /name/});
+
+            const result = await dbHelper.db.collection('test_coll').findOne(new ObjectID('000000000000000000000002'));
+            expect(result).to.be.null;
+        });
+    });
 });
