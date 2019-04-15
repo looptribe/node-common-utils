@@ -40,6 +40,14 @@ class Repository {
         }
     }
 
+    async deleteMany(filter) {
+        this.logger.debug(`${this.repositoryName}/deleteMany`);
+        const collection = await this.getCollection();
+        const results = await collection.deleteMany(filter);
+        this.logger.silly(util.inspect(results, true, null));
+        return results.deletedCount;
+    }
+
     async find(query = {}, offset, limit) {
         this.logger.debug(`${this.repositoryName}/find`);
         const collection = await this.getCollection();
