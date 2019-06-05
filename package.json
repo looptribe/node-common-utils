@@ -43,7 +43,7 @@
   },
   "peerDependencies": {
     "mongodb": "^3.1.12",
-    "nodemailer": "^5.1.1",
+    "nodemailer": "^6.2.1",
     "twig": "^1.13.2"
   }
 }
