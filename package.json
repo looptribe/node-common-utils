@@ -25,7 +25,7 @@
     "chai-as-promised": "^7.1.1",
     "coveralls": "^3.0.3",
     "cross-env": "^5.2.0",
-    "eslint": "^5.12.0",
+    "eslint": "^6.0.1",
     "eslint-config-google": "^0.13.0",
     "eslint-plugin-mocha-no-only": "^1.1.0",
     "mocha": "^6.0.1",
